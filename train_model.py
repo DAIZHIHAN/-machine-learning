@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """
 Created on Wed Oct 16 11:08:17 2019
 
@@ -31,7 +31,7 @@ y=LabelEncoder().fit_transform(y)
 
 x=df.iloc[1:,[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]] #這邊是條X-Y軸的特徵 此資料有16個維度
 
-x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.2,random_state=0)
+x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.2,random_state=0)#切割80%,20%
 
 svm=SVC(kernel='rbf',random_state=0,gamma=0.5,C=38) #這邊條參數
 
